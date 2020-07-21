@@ -110,6 +110,7 @@ brew bundle --file=- <<EOF
 tap "homebrew/services"
 tap "puma/puma"
 tap "TomAnthony/brews"
+tap "homebrew/cask-fonts"
 
 # Unix
 brew "git"
@@ -146,6 +147,31 @@ brew "anycable-go"
 # Databases
 brew "postgresql@11", restart_service: :changed
 brew "redis", restart_service: :changed
+
+# Custom packages
+brew "terraform"
+brew  "awscli"
+brew  "jq"
+
+# Custom casks
+cask "google-chrome"
+cask "firefox"
+cask "visual-studio-code"
+cask "notion"
+cask "slack"
+cask "iterm2"
+cask "docker"
+cask "alfred"
+cask "zoom"
+cask "figma"
+cask "spotify"
+cask "bitwarden"
+cask "1password"
+cask "github"
+cask "dash"
+cask "virtualbox"
+cask "karabiner-elements"
+cask "font-jetbrains-mono"
 EOF
 
 if brew list | grep --silent "puma-dev"; then

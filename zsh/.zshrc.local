@@ -1,0 +1,2 @@
+# Load AWS staging profile
+AWS_PROFILE=staging
