@@ -152,6 +152,8 @@ brew "redis", restart_service: :changed
 brew "terraform"
 brew  "awscli"
 brew  "jq"
+brew tap federico-terzi/espanso
+brew "espanso"
 
 # Custom casks
 cask "google-chrome"
